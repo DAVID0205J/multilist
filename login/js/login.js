@@ -13,8 +13,7 @@ DOM.innerHTML=`
         <input type="text" class="entrada_de_texto_1" placeholder="Contraseña">
         <input type="text" class="entrada_de_texto_2" placeholder="Correo">
 
-        <a href="http://127.0.0.1:5500/main.html" class="beta">
-            <button>Probar Beta</button>
+            <button class="beta">Probar Beta</button>
         </a>
         <button class="iniciar">Iniciar</button>
 
