@@ -175,7 +175,7 @@
     height: 100vh;
     display: grid;
     grid-template-columns: repeat(25, 1fr);
-    grid-template-rows: repeat(25, 1fr);
+    grid-template-rows: repeat(28, 1fr);
 }
 
 .icon {
@@ -352,6 +352,35 @@
     color: rgb(168, 167, 167);
 }
 
+footer{
+    display: grid;
+    grid-row-start: 27;
+    grid-row-end: 29;
+    grid-column-start: 1;
+    grid-column-end: 26;
+
+    grid-template-columns: 10% 10% 1fr 1fr;
+    background-color: #b5c0ba00;
+    color: rgb(127, 127, 127);
+    align-content: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.187);
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.304);
+
+}
+.logo{
+    margin-left: 50px;
+}
+.Ncolegio{
+    grid-column: 2;
+}
+.CorreoP{
+    grid-column: 4;
+    text-align: right;
+    align-content: center;
+    padding-right: 3rem;
+}
 /* Estilos para la ventana emergente de agregar tarea */
 .ventana-agregar-tarea {
     display: grid;
@@ -400,3 +429,51 @@
 .ventana-agregar-tarea button:hover {
     background-color: #07933d;
 }
+.ventana-crear-cuenta {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ventana-crear-cuenta h2 {
+    margin-bottom: 20px;
+}
+
+.ventana-crear-cuenta label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.ventana-crear-cuenta input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.ventana-crear-cuenta button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #00ff2f;
+    color: white;
+    cursor: pointer;
+}
+
+.ventana-crear-cuenta button:hover {
+    background-color: #07933d;
+}
+
