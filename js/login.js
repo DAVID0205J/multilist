@@ -33,6 +33,16 @@ let Principal_page = `
     </div>
     <div class="title">MULTITASKING</div>
 
+    <section class="filtro-container">
+        <label for="estado-tarea" class="filtro-label">Estado de la Tarea:</label>
+        <select id="estado-tarea" class="filtro-select">
+            <option value="En Progreso">En Progreso</option>
+            <option value="Sin entregar">Sin entregar</option>
+            <option value="Completado">Completado</option>
+            <option value="entrega tarde">Entrega tarde</option>
+        </select>
+    </section>
+
     <input class="Search" type="text" placeholder="Search">
     <button class="more" id='more'>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="black">

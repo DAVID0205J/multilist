@@ -352,6 +352,43 @@
     color: rgb(168, 167, 167);
 }
 
+.filtro-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px;
+
+    grid-column: 20;
+    grid-row: 3;
+}
+
+.filtro-label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+.filtro-select {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.filtro-select:focus {
+    border-color: #007bff;
+    box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.2);
+    outline: none;
+}
+
+.filtro-select option {
+    padding: 10px;
+}
+
 footer{
     display: grid;
     grid-row-start: 27;
