@@ -80,11 +80,17 @@ function manejarClick() {
         return;
     }
 
-    // Buscar en la base de datos si el correo y la contraseña coinciden
+
     const usuarioValido = correos.some(usuario => usuario.correo === correo && usuario.contra === contra);
 
     if (usuarioValido) {
-        DOM.innerHTML = Principal_page;  // Cambia al contenido de la página principal
+        DOM.innerHTML = Principal_page;  
+        setTimeout(() => {
+            let btnAGREGAR_TAREA = document.querySelector(".more");
+            if (btnAGREGAR_TAREA) {
+                btnAGREGAR_TAREA.addEventListener('click', mostrarVentanaAgregarTarea);
+            }
+        }, 0); 
     } else {
         alert('Correo o contraseña incorrectos.');
     }
